@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class exe6 {
+    public static void main(String[] args) {
+        Scanner Ler = new Scanner(System.in);
+
+        int n = 10;
+        int vetor[] = new int[n];
+        int i;
+        vetor[0] = 12;
+        vetor[1] = 24;
+        vetor[2] = 11;
+        vetor[3] = 1;
+        vetor[4] = 7;
+        vetor[5] = 9;
+        vetor[6] = 17;
+        vetor[7] = 10;
+        vetor[8] = 3;
+        vetor[9] = 8;
+        System.out.println("NUM: ");
+        int num = Ler.nextInt();
+
+        for (i = 0; i<n; i++){
+            if (vetor[i] == num){
+                System.out.println("O número foi encontrado na posição: "+i);
+            }
+        }
+    }
+}
