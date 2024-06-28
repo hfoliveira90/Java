@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner Ler = new Scanner(System.in);
+
+        int n = 10;
+        int vetor[] = new int[n];
+        int i;
+
+        for (i = 0; i < 10; i++){
+            System.out.println("Informe o valor "+ (i+1) +" de "+ n +":");
+            vetor[i] = Ler.nextInt();
+        }
+        for (i = 0; i < 10; i++){
+            System.out.println(vetor[i]);
+        }
+
+
+    }
+}
