@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class exe5 {
+    public static void main(String[] args) {
+        Scanner Ler = new Scanner(System.in);
+
+        int n = 8;
+        int vetor[] = new int[n];
+        int i;
+
+        for (i = 0; i < n; i++){
+            System.out.println("Informe o valor "+ (i+1) +" de "+ n +":");
+            vetor[i] = Ler.nextInt();
+        }
+        
+        for (i = (n/2); i < n; i++){
+            System.out.print(vetor[i]);
+        }
+        for (i = 0; i < n/2; i++){
+            System.out.print(vetor[i]);
+        }
+
+    }
+}
