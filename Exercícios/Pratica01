@@ -1,0 +1,189 @@
+EXERCÍCIO 1
+
+package aula;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+    
+}
+
+----------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 2
+
+package aula;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int i = 1;
+        while (i <=5){
+            System.out.println(i);
+            i++;
+        }
+    }
+    
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 3
+
+package aula;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i<=5);
+    }
+    
+}
+
+--------------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 4
+
+package aula;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for (int i = 1; i <= 15; i++) {
+            if (i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+    
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 5
+
+package aula;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int soma = 0;
+        
+        for (int s = 0; s <= 10; s++){
+            soma += s;
+        }
+        
+        System.out.println("A soma dos números entre 0 e 10 é: " + soma);
+    }
+    
+}
+
+-------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 6
+
+package aula;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int soma = 0;
+        int quantidade = 0;
+        
+        for (int i = 1; i <= 100; i++){
+            if (i % 2 != 0) {
+                soma += i;
+                quantidade++;
+            }
+        }
+        
+        float media = (float) soma / quantidade;
+        
+        System.out.println("A média dos números ímpares entre 0 e 100 é: " + media);
+    }
+    
+}
+
+-------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 7
+
+
+package aula;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String nome = JOptionPane.showInputDialog("Digite seu nome:");
+        
+        if (nome != null && !nome.isEmpty()){
+            System.out.println("Olá, " + nome + "!");
+        } else {
+            System.out.println("Digite seu nome.");
+        }
+    }
+    
+}
+
+-----------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 8
+
+package aula;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int v = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro: "));
+        
+        if (v % 2 == 0){
+            System.out.println("O número " + v + " é par.");
+        } else {
+            System.out.println("O número " + v + " é ímpar.");
+        }
+    }
+}
