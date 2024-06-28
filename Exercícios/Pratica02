@@ -1,0 +1,190 @@
+EXERCÍCIO 2
+
+
+package pratica002;
+
+public class Aluno {
+    
+    private int ra;
+    private String nome;
+    private char sexo;
+    private String rg;
+    private String cpf;
+    
+    public Aluno (int ra, String nome, char sexo, String rg, String cpf){
+        this.ra = ra;
+        this.nome = nome;
+        this.sexo = sexo;
+        this.rg = rg;
+        this.cpf = cpf;
+    }
+    
+    public int getRa(){return ra;}
+    public String getNome(){return nome;}
+    public char getSexo(){return sexo;}
+    public String getRg(){return rg;}
+    public String getCpf(){return cpf;}
+    
+    public void status(){
+        System.out.println("RA: " + ra);
+        System.out.println("Nome " + nome);
+        System.out.println("Sexo: " + sexo);
+        System.out.println("RG: " + rg);
+        System.out.println("CPF: " + cpf);
+    }
+    
+    public void setRA(int ra) {this.ra = ra;}
+    public void setNome(String nome) {this.nome = nome;}
+    public void setSexo(char sexo) {this.sexo = sexo;}
+    public void setRg(String rg) {this.rg = rg;}
+    public void setCpf(String cpf) {this.cpf = cpf;}    
+}
+
+-----------------------------------------------------------------------------
+
+
+public class Teste {
+    public static void main(String[] args){
+        Aluno a1 = new Aluno(1234,"Hoton",'M',"4753489810","37965372843");
+        
+        a1.status();
+    } 
+}
+
+
+
+
+EXERCÍCIO 3
+
+
+public class Main {
+    public static void main(String[] args) {
+               Aluno n = new Aluno(1234,"Hoton",'M',"4753489810", "37965372843", new Data(25,09,2003););
+              
+               n.imprimir();
+        }
+    }
+
+-------------------------------------------------------------------------------------------------------------
+
+public class Aluno {
+    private int ra;
+    private String nome;
+    private char sexo;
+    private String rg;
+    private String cpf;
+
+    private Data dataNasc;
+
+
+
+    public void imprimir(){
+        System.out.println("RA: " + this.getRa());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println( "Sexo: " + this.getSexo());
+        System.out.println("RG: " + this.getRg());
+        System.out.println("CPF: " + this.getCpf());
+        System.out.println("Data: " + this.getDataNasc().formatarData());
+    }
+
+   public Aluno (int ra, String nome, char sexo, String rg, String cpf){
+        this.ra = ra;
+        this.nome = nome;
+        this.sexo = sexo;
+        this.rg = rg;
+        this.cpf = cpf;
+
+   }
+
+    public int getRa() {
+        return ra;
+    }
+
+    public void setRa(int ra) {
+        this.ra = ra;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getRg() {
+        return rg;
+    }
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public Data getDataNasc() {
+        return dataNasc;
+    }
+
+    public void setDataNasc(Data dataNasc) {
+        this.dataNasc = dataNasc;
+    }
+}
+
+---------------------------------------------------------------------------------------
+
+public class Data {
+    private int dias;
+    private int mes;
+    private int ano;
+
+    public Data(int dias, int mes, int ano){
+
+        this.dias = dias;
+        this.mes = mes;
+        this.ano = ano;
+
+    }
+
+    public String formatarData(){
+
+           return dias + "/" + mes + "/" + ano;
+    }
+
+    public int getDias() {
+        return dias;
+    }
+
+    public void setDias(int dias) {
+        this.dias = dias;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+}
