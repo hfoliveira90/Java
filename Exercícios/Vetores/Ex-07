@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class exe7 {
+    public static void main(String[] args) {
+
+        int vetorA[] = new int[5];
+        int vetorB[] = new int[8];
+        int i;
+        vetorA[0] = 12;
+        vetorA[1] = 24;
+        vetorA[2] = 11;
+        vetorA[3] = 1;
+        vetorA[4] = 7;
+
+        vetorB[0] = 12;
+        vetorB[1] = 24;
+        vetorB[2] = 11;
+        vetorB[3] = 1;
+        vetorB[4] = 7;
+        vetorB[5] = 9;
+        vetorB[6] = 17;
+        vetorB[7] = 10;
+        for (i = 0; i<vetorA.length; i++){
+            for(int j = 0 ; j<vetorB.length ;j++){
+                if (vetorA[i] == vetorB[j]){
+                    System.out.print(vetorA[i]+" ");
+                }
+            }
+        }
+    }
+}
